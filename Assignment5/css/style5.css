@@ -1,0 +1,108 @@
+html {
+  background-color: palevioletred;
+  width: 300px;
+  height: 550px;
+  border: 4px solid rebeccapurple;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 95%;
+  margin: 3%;
+  border: 4px solid wheat;
+}
+
+.Main-bar {
+  width: 100%;
+  height: 5%;
+  border: 2px solid aquamarine;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 10%;
+}
+.Main-bar__column {
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid whitesmoke;
+  box-sizing: border-box;
+}
+.Main-bar__column:nth-child(2) span {
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+.Main-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Now-Music {
+  width: 100%;
+  height: 20%;
+  margin-top: 7%;
+  border: 2px solid skyblue;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Now-Music__image {
+  width: 30%;
+  border: 2px solid crimson;
+  box-sizing: border-box;
+}
+.Now-Music__column {
+  width: 50%;
+  border: 2px solid crimson;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Now-Music__Title {
+  height: 70%;
+  width: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  display: flex;
+}
+.Now-Music__Artist {
+  height: 30%;
+  width: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.btn-Menu {
+  height: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-Menu__column:first-child {
+  width: 50%;
+  height: 100%;
+  border: 2px solid wheat;
+  box-sizing: border-box;
+}
+.btn-Menu__column:nth-child(2) {
+  width: 25%;
+  height: 100%;
+  border: 2px solid wheat;
+  box-sizing: border-box;
+}
+.btn-Menu__column:last-child {
+  width: 25%;
+  height: 100%;
+  border: 2px solid wheat;
+  box-sizing: border-box;
+}
+.playlist {
+  width: 100%;
+  height: 50%;
+  border: 2px solid rgb(202, 132, 3);
+  box-sizing: border-box;
+}
