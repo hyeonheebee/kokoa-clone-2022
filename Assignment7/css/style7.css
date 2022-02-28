@@ -83,6 +83,7 @@ body {
   color: white;
   margin: 0px 8px;
 }
+
 .song-screen {
   display: flex;
   flex-direction: column;
@@ -127,12 +128,7 @@ body {
   justify-content: center;
   position: relative;
 }
-.now-play__btn {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .play-bar div {
   height: 3px;
   width: 210px;
@@ -157,26 +153,42 @@ body {
   border-radius: 2.5px;
   background-color: black;
 }
-.now-play__btn i {
-  margin: 0px 20px;
-}
+
 .icon-circle {
-  width: 15px;
+  width: 60px;
   border-radius: 30px;
-  height: 15px;
-  border: solid 8px;
-  position: relative;
-}
-.now-play__btn div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.icon-circle i {
+  height: 60px;
+  box-sizing: border-box;
+  border: solid 30px;
   position: absolute;
-  top: 0.05px;
-  left: -20.5px;
+  z-index: 2;
+  left: 110px;
+  bottom: 70px;
 }
+
+.now-play__btn i:nth-of-type(2) {
+  position: absolute;
+  left: 130px;
+
+  z-index: auto;
+}
+.now-play__btn i:first-of-type {
+  right: 80px;
+  position: absolute;
+  z-index: 2;
+}
+.now-play__btn i:last-of-type {
+  left: 80px;
+  position: absolute;
+  z-index: 2;
+}
+
 .now-play__btn {
   margin-top: 20px;
+}
+.now-play__btn {
+  height: 50px;
+  display: flex;
+
+  z-index: auto;
 }
