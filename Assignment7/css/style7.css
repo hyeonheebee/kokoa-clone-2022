@@ -154,41 +154,36 @@ body {
   background-color: black;
 }
 
-.icon-circle {
-  width: 60px;
-  border-radius: 30px;
-  height: 60px;
-  box-sizing: border-box;
-  border: solid 30px;
-  position: absolute;
-  z-index: 2;
-  left: 110px;
-  bottom: 70px;
-}
-
-.now-play__btn i:nth-of-type(2) {
-  position: absolute;
-  left: 130px;
-
-  z-index: auto;
-}
-.now-play__btn i:first-of-type {
-  right: 80px;
-  position: absolute;
-  z-index: 2;
-}
-.now-play__btn i:last-of-type {
-  left: 80px;
-  position: absolute;
-  z-index: 2;
+.now-play__btn i {
+  margin: 0 20px;
 }
 
 .now-play__btn {
   margin-top: 20px;
-}
-.now-play__btn {
   height: 50px;
   display: flex;
-
-  z-index: auto;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.now-play__btn span {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.now-play__btn i:first-child,
+.now-play__btn i:last-child {
+  opacity: 0.5;
+}
+
+.now-play__btn span i {
+  color: white;
+  opacity: 1 !important;
+}
+/* 속성값을 재설정할때 사용  */
