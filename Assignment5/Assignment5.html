@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style5.css" />
+    <link rel="stylesheet" href="style5.css" />
     <title>Assignment#5</title>
   </head>
   <body>
-    <section>
+    <div class="main-box">
       <div class="Main-bar">
         <div class="Main-bar__column">
-          <i class="fas fa-times"></i>
+          <i class="fas fa-bars"></i>
+
           <!-- To do : x icon -->
         </div>
         <div class="Main-bar__column">
@@ -23,7 +24,7 @@
 
       <div class="Now-Music">
         <div class="Now-Music__image">
-          <img src="oasis.jpg" />
+          <img src="img/oasis_wdw.jpg" />
           <!-- To do : now play album image -->
         </div>
         <div class="Now-Music__column">
@@ -32,7 +33,7 @@
             <!-- span : Random Love / switch line-->
           </div>
           <div class="Now-Music__Artist">
-            <span>by Oasis</span>
+            <span>Oasis</span>
             <!-- span : by Divay Kapoor -->
           </div>
         </div>
@@ -52,25 +53,45 @@
       </div>
       <!--second selector buttom section-->
       <div class="playlist">
-        <ui class="playlist__items">
-          <li>Boys and Grils</li>
-          <li>by blur</li>
-        </ui>
+        <div class="playlist__box">
+          <div>
+            <img src="img/blur_ge.jpg" />
+          </div>
+          <ui class="playlist__items">
+            <li>Country House</li>
+            <li>blur</li>
+          </ui>
+        </div>
 
-        <ui class="playlist__items">
-          <li>Yellow Submarine</li>
-          <li>by Beatles</li>
-        </ui>
-        <ui class="playlist__items">
-          <li>Super Sonic</li>
-          <li>by Oasis</li>
-        </ui>
-        <ui class="playlist__items">
-          <li>Back in Black</li>
-          <li>by AC/DC</li>
-        </ui>
+        <div class="playlist__box">
+          <div>
+            <img src="img/beatles_yl.jpg" />
+          </div>
+          <ui class="playlist__items">
+            <li>Yellow Submarine</li>
+            <li>Beatles</li>
+          </ui>
+        </div>
+        <div class="playlist__box">
+          <div>
+            <img src="img/oasis.jpg" />
+          </div>
+          <ui class="playlist__items">
+            <li>Super Sonic</li>
+            <li>Oasis</li>
+          </ui>
+        </div>
+        <div class="playlist__box">
+          <div>
+            <img src="img/acdc.jpg" />
+          </div>
+          <ui class="playlist__items">
+            <li>Back in Black</li>
+            <li>by AC/DC</li>
+          </ui>
+        </div>
       </div>
-    </section>
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

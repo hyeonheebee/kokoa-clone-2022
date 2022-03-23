@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-body {
-  background-color: rgba(219, 118, 153, 0.849);
-  width: 300px;
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "css/var.css";
+.main-box {
+  width: 310px;
   height: 600px;
   display: flex;
-  justify-content: center;
-  border: solid 2px rgba(46, 23, 31, 0.849);
-}
-
-section {
-  width: 95%;
-  margin: 3%;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: var(--bg);
+  padding: 20px;
+  border: solid 6px var(--cont);
+  border-radius: 20px;
 }
 
 .Main-bar {
@@ -21,7 +21,7 @@ section {
 }
 .Main-bar__column {
   width: 33.3%;
-  height: 100%;
+  height: 80%;
 }
 .Main-bar__column:first-child {
   display: flex;
@@ -32,14 +32,14 @@ section {
   border-radius: 2px;
   padding-left: 1px;
   padding-right: 1px;
-  border: dashed 1px rgba(189, 97, 129, 0.849);
-  color: rgba(133, 62, 86, 0.849);
+
+  color: var(--menu);
 }
 .Main-bar__column:nth-child(2) span {
   font-size: 15px;
-  font-family: 'Patrick Hand', cursive;
-  color: rgba(133, 62, 86, 0.849);
-  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+  color: var(--menu);
+  font-weight: 400;
 }
 .Main-bar__column:nth-child(2) {
   display: flex;
@@ -54,14 +54,14 @@ section {
 .Now-Music {
   width: 100%;
   height: 20%;
-  margin-top: 7%;
+  margin-top: 3%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
 }
 .Now-Music__image {
   width: 40%;
-  border: 1px dashed rgb(43, 82, 139);
+
   border-radius: 10%;
   box-sizing: border-box;
 }
@@ -71,16 +71,17 @@ section {
   flex-wrap: wrap;
 }
 .Now-Music__Title {
-  height: 70%;
+  height: 50%;
   width: 100%;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 .Now-Music__Title span {
   font-size: 32px;
-  font-family: 'Patrick Hand', cursive;
-  font-weight: 800;
-  color: rgba(250, 218, 229, 0.849);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 600;
+  color: var(--cont);
   margin-left: 10px;
   line-height: 1;
 }
@@ -89,23 +90,24 @@ section {
   width: 100%;
 }
 .Now-Music__Artist span {
-  font-family: 'Patrick Hand', cursive;
-  color: rgba(250, 218, 229, 0.849);
-  font-size: 15px;
+  font-family: "Bebas Neue", cursive;
+  color: var(--dark);
+  font-size: 20px;
   margin-left: 10px;
 }
 .btn-Menu {
-  height: 10%;
+  height: 7%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
   display: flex;
   justify-content: space-around;
 }
 .btn-Menu__column {
-  border-radius: 15%;
+  border-radius: 10%;
+  width: 33%;
   box-sizing: border-box;
-  border: solid rgba(102, 33, 57, 0.849);
-  border-width: 1px 2px 3.5px 2px;
+  border: solid var(--dark);
+  border-width: 0.5px 1px 3.5px 1px;
 }
 .btn-Menu__column:first-child {
   width: 38%;
@@ -115,13 +117,13 @@ section {
   align-items: center;
 }
 .btn-Menu__column:first-child span {
-  font-size: 20px;
-  font-family: 'Patrick Hand', cursive;
-  color: rgba(250, 218, 229, 0.849);
+  font-size: 15px;
+  font-family: "Bebas Neue", cursive;
+  color: var(--cont);
   margin-left: 10px;
 }
 .btn-Menu__column:first-child i {
-  color: rgba(250, 218, 229, 0.849);
+  color: var(--menu);
 }
 .btn-Menu__column:nth-child(2) {
   width: 22%;
@@ -131,10 +133,10 @@ section {
   align-items: center;
 }
 .btn-Menu__column:nth-child(2) i {
-  color: rgba(250, 218, 229, 0.849);
+  color: var(--menu);
 }
 .btn-Menu__column:last-child i {
-  color: rgba(250, 218, 229, 0.849);
+  color: var(--menu);
 }
 .btn-Menu__column:last-child {
   width: 22%;
@@ -147,17 +149,33 @@ section {
 .playlist {
   width: 100%;
   height: 50%;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 20px;
-  font-family: 'Patrick Hand', cursive;
-  color: rgba(59, 29, 40, 0.849);
+  font-family: "Bebas Neue", cursive;
+  color: var(--cont);
 }
-
+.playlist__box {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.playlist__box div {
+  width: 20%;
+}
+.playlist__box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.playlist__items {
+  display: inline-block;
+  width: 70%;
+}
 .playlist__items li {
-  margin-left: 50px;
+  margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   list-style: none;
@@ -166,7 +184,8 @@ section {
   font-size: 20px;
 }
 .playlist__items li:last-child {
-  font-size: 15px;
+  font-size: 13px;
+  color: var(--dark);
 }
 .playlist__items:first-child li:first-child {
   font-size: 20px;
